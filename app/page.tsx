@@ -34,10 +34,13 @@ export default function Home() {
 
       <main className="max-w-4xl mx-auto  ">
         <div className="sm:flex gap-5 my-14 hover:opacity-70 p-5">
-          <Image width={500} height={300} src={post.image} alt="" className="object-cover md:h-full md:w-48"/>
+           
+              <Image width={500} height={300} src={post.image} alt="" className="object-cover md:h-full md:w-48"/>
+          
+         
           <div className="col-span-3">
           <Link href={`/blog/${post.slug}`}>
-            <h2 className=" text-2xl font-bold text-teal-700">{post.title}</h2>
+            <h2 className=" text-2xl font-bold text-sky-700">{post.title}</h2>
           </Link>
           <p className="py-3 text-xl ">{post.excerpt}</p>
           <p className=" text-slate-600 text-xs">
@@ -54,13 +57,13 @@ export default function Home() {
 {postPreviews}
   
   <main className="max-w-4xl mx-auto p-5 ">
-    <div className="max-w-md mx-auto bg-teal-600 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
+    <div className="max-w-md mx-auto bg-sky-600 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
       <div className="md:flex">
         <div className="md:shrink-0">
           <Image width={500} height={300} className="h-48 w-full object-cover md:h-full md:w-48" src="/img/Snapseed.jpg" alt="Modern building architecture" />
         </div>
         <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-teal-700 font-semibold">Company retreats</div>
+          <div className="uppercase tracking-wide text-sm text-sky-800 font-semibold">Company retreats</div>
           <a href="#" className="block mt-1 text-lg leading-tight font-medium text-slate-800 hover:underline">Incredible accommodation for your team</a>
           <p className="mt-2 text-slate-900">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
         </div>
